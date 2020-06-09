@@ -37,6 +37,16 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function follows()
+    {
+        return $this->belongsToMany(User::class, 'follows', 'user_id', 'following_user_id');
+    }
+
+    public function follow(User $user)
+    {
+        return $this->follows()->save($user);
+    }
+
     public function  getAvatarAttribute()
     {
         return "https://i.pravatar.cc/50?u=" . $this->email;
