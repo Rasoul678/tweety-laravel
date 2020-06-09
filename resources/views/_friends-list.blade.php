@@ -4,7 +4,7 @@
     <li class="mb-3">
         <div class="flex items-center">
             <img class="rounded-full mr-2" src="https://i.pravatar.cc/50?img=1" alt="avatar">
-            John Doe
+            Sarah Smith
         </div>
     </li>
     @endforeach
