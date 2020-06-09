@@ -12,6 +12,13 @@ class TweetController extends Controller
         $this->middleware('auth');
     }
 
+    public function index()
+    {
+        $tweets = auth()->user()->timeline();
+
+        return view('home', compact('tweets'));
+    }
+
     public function store()
     {
         $attributes = request()->validate([
