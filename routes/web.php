@@ -20,4 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/tweets', 'TweetController@index')->name('home');
+
 Route::post('/tweets', 'TweetController@store')->name('tweets.store');
+
+Route::get('/profile/{user:name}', 'ProfileController@show')->name('profile');
