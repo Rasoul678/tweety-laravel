@@ -21,7 +21,7 @@
 </head>
 <body>
 <div id="app">
-    <section class="px-8 py-4 mb-8">
+    <section class="px-8 py-4 mb-2">
         <header class="container mx-auto flex items-center">
             <img src="{{ asset('images/tweety-logo.png') }}" class="w-10">
             <h1 class="ml-4 font-bold text-2xl">Tweety</h1>
