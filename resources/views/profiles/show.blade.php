@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-app>
     <header class="mb-6 relative">
         <div class="h-48 overflow-y-hidden rounded-lg mb-2">
             <img class="w-full" src="{{ asset('/images/profile-banner.jpg') }}" alt="profile">
@@ -28,4 +26,4 @@
         >
     </header>
     @include('_timeline', ['tweets'=>$user->tweets])
-@endsection
+</x-app>
