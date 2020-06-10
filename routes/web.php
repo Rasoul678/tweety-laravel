@@ -23,8 +23,10 @@ Route::get('/tweets', 'TweetController@index')->name('home');
 
 Route::post('/tweets', 'TweetController@store')->name('tweets.store');
 
-Route::get('/profiles/{user:name}', 'ProfileController@show')->name('profile');
+Route::get('/profiles/{user:username}', 'ProfileController@show')->name('profile');
 
-Route::post('/profiles/{user:name}/follow', 'FollowController@store')->name('follow');
+Route::post('/profiles/{user:username}/follow', 'FollowController@store')->name('follow');
 
-Route::get('/profiles/{user:name}/edit', 'ProfileController@edit')->name('profile.edit');
+Route::get('/profiles/{user:username}/edit', 'ProfileController@edit')->name('profile.edit');
+
+Route::patch('/profiles/{user:username}', 'ProfileController@update')->name('profile.update');

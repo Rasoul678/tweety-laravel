@@ -6,7 +6,8 @@
                 class="rounded-full mr-2 absolute top-0 transform -translate-x-1/2 translate-y-3"
                 src="{{ $user->avatar }}"
                 alt="avatar"
-                style="left: 50%"
+                style="left: 50%;"
+                width="200"
             >
         </div>
         <div class="flex justify-between items-center mb-8">
