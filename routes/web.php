@@ -23,6 +23,10 @@ Route::get('/tweets', 'TweetController@index')->name('home');
 
 Route::post('/tweets', 'TweetController@store')->name('tweets.store');
 
+Route::post('/tweets/{tweet}/like', 'TweetLikesController@store')->name('likes.store');
+
+Route::delete('/tweets/{tweet}/like', 'TweetLikesController@destroy')->name('likes.destroy');
+
 Route::get('/profiles/{user:username}', 'ProfileController@show')->name('profile');
 
 Route::post('/profiles/{user:username}/follow', 'FollowController@store')->name('follow');
