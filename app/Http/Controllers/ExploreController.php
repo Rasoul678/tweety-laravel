@@ -12,7 +12,7 @@ class ExploreController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function __invoke()
     {
         return view('explore', ['users'=>User::paginate(20)]);
     }

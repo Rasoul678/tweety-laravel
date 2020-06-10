@@ -114,7 +114,8 @@
         </div>
 
         <div class="mb-6">
-            <button type="submit" class="bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500">Update</button>
+            <button type="submit" class="bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500 mr-3">Update</button>
+            <a class="bg-red-500 border border-red-600 px-4 py-2 rounded text-white" href="{{ $user->path() }}">Cancel</a>
         </div>
 
     </form>

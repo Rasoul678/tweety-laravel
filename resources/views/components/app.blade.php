@@ -11,7 +11,7 @@
                     {{ $slot }}
                 </div>
                 @if(auth()->check())
-                    <div class="lg:w-1/6 bg-blue-200 rounded-xl p-4">
+                    <div class="lg:w-1/6">
                         @include('_following-list')
                     </div>
                 @endif

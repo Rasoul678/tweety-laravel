@@ -31,4 +31,4 @@ Route::get('/profiles/{user:username}/edit', 'ProfileController@edit')->name('pr
 
 Route::patch('/profiles/{user:username}', 'ProfileController@update')->name('profile.update');
 
-Route::get('/explore', 'ExploreController@index')->name('explore');
+Route::get('/explore', 'ExploreController')->name('explore');

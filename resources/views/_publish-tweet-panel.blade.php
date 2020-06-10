@@ -6,6 +6,8 @@
             id="body"
             class="w-full p-2 @error('body') border border-red-500 rounded-xl @enderror"
             placeholder="What's up?"
+            required
+            autofocus
         ></textarea>
         @error('body')
             <p class="text-red-500 text-sm">{{ $message }}</p>
@@ -19,7 +21,7 @@
                 width="50"
                 height="50"
             >
-            <button type="submit" class="bg-blue-500 rounded-xl shadow px-3 text-white">Tweet-a-roo!</button>
+            <button type="submit" class="bg-blue-500 rounded-xl shadow py-2 px-6 text-white hover:bg-blue-700">Publish</button>
         </footer>
     </form>
 </div>

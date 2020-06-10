@@ -3,7 +3,7 @@
         @foreach($users as $user)
             <a href="{{ $user->path() }}" class="flex items-center">
                 <img
-                    class="rounded-full p-4 mr-2"
+                    class="rounded-xl p-4 mr-2"
                     src="{{ $user->avatar }}"
                     alt="{{ $user->username }}'s avatar"
                     width="100"
